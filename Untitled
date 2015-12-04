@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<form action="https://formspree.io/bonnie.jp.campbell@hotmail.com" method="post">
+
+  <div>
+    <label for="name">Name<label>
+    <input id="name" required name="name">
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required placeholder="you@yours.com">
+  </div>
+
+  <div>
+    <label for="subject">Subject</label>
+    <select id="subject" name="_subject">
+      <option>default empty option, not recommeneded having it empty</option>
+      <option>Looking for a freelancer</option>
+      <option>Let's get coffee</option>
+      <option>Your amazing!</option>
+    </select>
+  </div>
+
+  <fieldset>
+
+    <legend>This is what you would use for credit card info</legend>
+    <input id="happy" type="radio" name="feels">
+    <label for="happy">Happy</label>
+
+    <input id="sad" type="radio" name="feels">
+    <label for="sad">Sad</label>
+
+    <input id="board" type="radio" name="feels">
+    <label for="board">Board</label>
+
+    <input id="tired" type="radio" name="feels">
+    <label for="tired">Tired</label>
+
+    <input id="super" type="radio" name="feels">
+    <label for="super">Super</label>
+
+  </fieldset>
+
+  <div>
+    <label for="messages">Message</label>
+    <textarea id="messages" name="messages"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Send!</button>
+  </div>
+
+
+</form>
+
+</body>
+</html>
